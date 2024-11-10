@@ -1,5 +1,5 @@
 {% set name = "firewxpy" %}
-{% set version = "1.0.0.742" %}
+{% set version = "1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/firewxpy-{{ version }}.tar.gz
-  sha256: 30cdc685a592dd842d23b14dd5f520778154216b2cf6e75513ea16b3512bcc1a
+  sha256: 5dde953d8b7cb60150868a287e88afeea68fcfcd8cf6fcc36f9b1e01d9ab5321
 
 build:
   noarch: python
@@ -48,6 +48,7 @@ about:
   summary: Weather Analysis and Forecasting For Fire Weather
   license: MIT
   license_file: LICENSE
+  doc_url: https://github.com/edrewitz/firewxpy/tree/main/Documentation
 
 extra:
   recipe-maintainers:
