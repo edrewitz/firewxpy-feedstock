@@ -1,5 +1,5 @@
 {% set name = "firewxpy" %}
-{% set version = "1.2.111" %}
+{% set version = "1.2.112" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/firewxpy-{{ version }}.tar.gz
-  sha256: 0315c7aa6c14cededb9311992fb65959768f3f44572272660bd50e80898a0c2b
+  sha256: 7f804ddf8177e2b2d6701c958aa40a6716baef34cb1883194f2d0a7577897b7b
 
 build:
   noarch: python
@@ -18,7 +18,6 @@ requirements:
   host:
     - python >=3.10
     - setuptools >=64
-    - setuptools-scm >=8
     - pip
   run:
     - python >=3.10
@@ -27,9 +26,9 @@ requirements:
     - metpy >=1.5.1
     - netcdf4 >=1.7.1
     - numpy >=1.24
-    - pandas >=2
-    - siphon >=0.9
-    - xarray >=2023.01.0
+    - pandas >=2.2
+    - siphon >=0.10.0
+    - xarray >=2023.1.0
     - pysolar >=0.11
     - pygrib >=2.1.4
     - cfgrib >=0.9.10.4
