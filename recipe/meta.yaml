@@ -1,6 +1,6 @@
 {% set python_min = '3.10' %}
 {% set name = "firewxpy" %}
-{% set version = "1.4.3" %}
+{% set version = "1.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/firewxpy-{{ version }}.tar.gz
-  sha256: b50bd5baf66eaa81913f7fb1c009eb3c2df21e93ee35eab40b0a067cf328fd3c
+  sha256: a76419b207a08504ee4ac329bc9dd1b466d115ff1f9bf3c8e7ec6eba33bfaba0
 
 build:
   noarch: python
