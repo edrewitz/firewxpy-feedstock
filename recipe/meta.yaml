@@ -1,6 +1,6 @@
 {% set python_min = '3.10' %}
 {% set name = "firewxpy" %}
-{% set version = "1.4.5.1" %}
+{% set version = "1.4.6" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/firewxpy-{{ version }}.tar.gz
-  sha256: d48ab1c83588c22d4657dcc936afeefa8a287236a731439245d1515e89879cdc
+  sha256: 9a2759c4173a1ae67a978bb7f27b435072f890866dee99c4ff9f6b0a4f2e91dd
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools >=64
     - pip
   run:
-    - python >={{ python_min }}
+    - python >=3.10
     - matplotlib-base >=3.7
     - protobuf >=3.20.3
     - metpy >=1.5.1
@@ -31,10 +31,9 @@ requirements:
     - siphon >=0.10.0
     - xarray >=2023.1.0
     - pysolar >=0.11
-    - pygrib >=2.1.4
     - cfgrib >=0.9.10.4
     - cartopy >=0.21.0
-    - imageio >=2.34.0
+    - pytz >=2024.1
 
 test:
   imports:
@@ -50,7 +49,7 @@ about:
   summary: Weather Analysis and Forecasting For Fire Weather
   license: MIT
   license_file: LICENSE
-  doc_url: https://github.com/edrewitz/firewxpy/blob/main/Documentation/Landing_Page.md
+  doc_url: https://pypi.org/project/firewxpy/
 
 extra:
   recipe-maintainers:
