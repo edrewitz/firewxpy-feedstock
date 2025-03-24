@@ -1,6 +1,6 @@
 {% set python_min = '3.10' %}
 {% set name = "firewxpy" %}
-{% set version = "1.4.5.1" %}
+{% set version = "1.4.5.1" }
 
 package:
   name: {{ name|lower }}
