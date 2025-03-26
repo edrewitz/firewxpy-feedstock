@@ -1,6 +1,6 @@
 {% set python_min = '3.10' %}
 {% set name = "firewxpy" %}
-{% set version = "1.5.1" %}
+{% set version = "1.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/firewxpy-{{ version }}.tar.gz
-  sha256: f7554e964a1ddc3557a515d371f300a07fe8f03f18cbf9791de0f6095f9d1c78
+  sha256: 9801ed62c11818490a781d977de15da2b2be21efc9d73dd16295a9b27495c14d
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools >=64
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - matplotlib-base >=3.7
     - protobuf >=3.20.3
     - metpy >=1.5.1
