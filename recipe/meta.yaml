@@ -1,6 +1,6 @@
 {% set python_min = '3.10' %}
 {% set name = "firewxpy" %}
-{% set version = "1.5.8.3" %}
+{% set version = "1.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/firewxpy-{{ version }}.tar.gz
-  sha256: d9ae125236879c612bc0b3ec1c189927a28ee2ebbe698854aeb4c089a4e27136
+  sha256: 94bce7e397d103f63d776db76bae18631831e4685db9ce8432ec005d92ba6b1e
 
 build:
   noarch: python
@@ -50,6 +50,7 @@ about:
   license: MIT
   license_file: LICENSE
   doc_url: https://pypi.org/project/firewxpy/
+  dev_url: https://github.com/edrewitz/firewxpy
 
 extra:
   recipe-maintainers:

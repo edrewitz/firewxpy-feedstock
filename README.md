@@ -9,6 +9,8 @@ Package license: MIT
 
 Summary: Weather Analysis and Forecasting For Fire Weather
 
+Development: https://github.com/edrewitz/firewxpy
+
 Documentation: https://pypi.org/project/firewxpy/
 
 Current build status
