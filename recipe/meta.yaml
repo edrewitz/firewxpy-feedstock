@@ -1,6 +1,6 @@
 {% set python_min = '3.10' %}
 {% set name = "firewxpy" %}
-{% set version = "1.6.3" %}
+{% set version = "1.6.4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/firewxpy-{{ version }}.tar.gz
-  sha256: fc496d58664ec11fab5b19b79cdb1842a69aa67c8fce9b43b66fc8a9459402e2
+  sha256: f36106866a27a540190d05320251d74380542539fd95a7f890619531cbfefd18
 
 build:
   noarch: python
@@ -35,6 +35,7 @@ requirements:
     - cartopy >=0.21.0
     - pytz >=2024.1
     - xeofs >=3.0.4
+    - geopandas >=1.1.0
 
 test:
   imports:
