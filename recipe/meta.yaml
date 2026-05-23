@@ -1,14 +1,13 @@
-{% set python_min = '3.10' %}
 {% set name = "firewxpy" %}
-{% set version = "1.6.5" %}
+{% set version = "2.0" %}
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/firewxpy-{{ version }}.tar.gz
-  sha256: 15159a830c3025587e0ae94fe41e82608a5b8a0dc75e209345d5d9f1f081997f
+  sha256: 9dac980ee4a24819987e909ddf419b05be05a02ca98f7868ab691354ca6bb658
 
 build:
   noarch: python
@@ -18,24 +17,14 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=64
+    - setuptools >=64.0.0
+    - wheel
     - pip
   run:
     - python >={{ python_min }}
     - matplotlib-base >=3.7
-    - protobuf >=3.20.3
-    - metpy >=1.5.1
-    - netcdf4 >=1.7.1
-    - numpy >=1.24
-    - pandas >=2.2
-    - siphon >=0.10.0
-    - xarray >=2023.1.0
-    - pysolar >=0.11
-    - cfgrib >=0.9.10.4
-    - cartopy >=0.21.0
-    - pytz >=2024.1
-    - xeofs >=3.0.4
-    - geopandas >=1.1.0
+    - wxdata >=2.0.1
+    - shapeography >=1.2
 
 test:
   imports:
