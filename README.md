@@ -13,6 +13,12 @@ Development: https://github.com/edrewitz/firewxpy
 
 Documentation: https://pypi.org/project/firewxpy/
 
+
+Project Description
+-------------------
+FireWxPy is an open-source Python package that automates the creation of various types of weather analysis visualizations with a focus on fire weather.
+
+
 Current build status
 ====================
 
@@ -20,7 +26,9 @@ Current build status
 <table><tr>
     <td>All platforms:</td>
     <td>
-      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+      <a href="https://github.com/conda-forge/firewxpy-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/firewxpy-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
     </td>
   </tr>
 </table>
