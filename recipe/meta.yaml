@@ -23,7 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - matplotlib-base >=3.7
-    - wxdata >=2.0.2
+    - wxdata >=2.0.3
     - shapeography >=1.2
 
 test:
