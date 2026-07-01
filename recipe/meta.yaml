@@ -1,5 +1,5 @@
 {% set name = "firewxpy" %}
-{% set version = "2.1.1" %}
+{% set version = "2.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/firewxpy-{{ version }}.tar.gz
-  sha256: aa72818ea35486989e9d46228c414dd7ab907f4f2fc6f48f4ecf14428014a07c
+  sha256: c34c82a9179251b7325ef478e70376e21c031e39e36d4cd779952dedb08ae9ea
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - matplotlib-base >=3.7
-    - wxdata >=2.0.3
+    - wxdata >=2.0.4
     - shapeography >=1.2
 
 test:
